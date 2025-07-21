@@ -19,8 +19,8 @@ function Projects() {
         "React Infinite Scroll",
         "React Player",
       ],
-      liveUrl: "#",
-      codeUrl: "#",
+      liveUrl: "https://66bb3e0209c3810238a6aaab--scdbott.netlify.app/",
+      codeUrl: "https://github.com/jugal9124/Major_SCSDB_OTT_App_Using_React",
     },
     {
       title: "Obys Agency Clone",
@@ -34,8 +34,8 @@ function Projects() {
         "Locomotive.js",
         "ScrollTrigger",
       ],
-      liveUrl: "#",
-      codeUrl: "#",
+      liveUrl: "https://jugal9124.github.io/Obys-Agency-clone/",
+      codeUrl: "https://github.com/jugal9124/Obys-Agency-clone",
     },
     {
       title: "YouTube Video Transcript Chatbot",
@@ -49,8 +49,8 @@ function Projects() {
         "YouTube Transcript API",
         "Python",
       ],
-      liveUrl: "#",
-      codeUrl: "#",
+      liveUrl: "https://jugal9124-langchain-youtube-chatbot-streamlit-app-5evwsp.streamlit.app/",
+      codeUrl: "https://github.com/jugal9124/Langchain-youtube-chatbot",
     },
   ];
 
@@ -98,22 +98,24 @@ function Projects() {
                 </div>
 
                 <div className="flex space-x-4">
-                  <div
+                  <button
+                    onClick={() => window.open(project.liveUrl, "_blank")}
                     variant="outline"
                     size="sm"
                     className="flex-1 bg-transparent inline-flex items-center justify-center rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border border-gray-300 text-gray-700 hover:bg-gray-300 duration-300 px-3 text-sm py-2 items-cente cursor-pointer"
                   >
                     <FaExternalLinkAlt className="mr-2 h-4 w-4 " />
                     Live Demo
-                  </div>
-                  <div
+                  </button>
+                  <button
+                    onClick={() => window.open(project.codeUrl, "_blank")}
                     variant="outline"
                     size="sm"
                     className="flex-1 bg-transparent inline-flex items-center justify-center rounded-md font-medium transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 border border-gray-300 text-gray-700 hover:bg-gray-300 duration-300 px-3 text-sm py-2 items-cente cursor-pointer"
                   >
                     <FaGithub className="mr-2 h-4 w-4 " />
                     Code
-                  </div>
+                  </button>
                 </div>
               </div>
             </div>

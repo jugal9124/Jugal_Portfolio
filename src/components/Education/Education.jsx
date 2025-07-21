@@ -11,6 +11,9 @@ function Education() {
       score: "6.23 GPA",
       year: "2025",
       status: "In Progress",
+      Institute: "Institution",
+      University: "Board/University",
+      Score:"Score"
     },
     {
       degree: "Class XII",
@@ -19,6 +22,10 @@ function Education() {
       score: "77%",
       year: "2021",
       status: "Completed",
+      Institute: "Institution",
+      University: "Board/University",
+      Score:"Score"
+
     },
     {
       degree: "Class X",
@@ -27,6 +34,9 @@ function Education() {
       score: "61%",
       year: "2019",
       status: "Completed",
+      Institute: "Institution",
+      University: "Board/University",
+      Score:"Score"
     },
   ]
 
@@ -57,15 +67,15 @@ function Education() {
               <div className='p-6 pt-0'>
                 <div className="grid md:grid-cols-3 gap-4">
                   <div>
-                    <p className="font-medium text-gray-900">Institution</p>
+                    <p className="font-medium text-gray-900">{edu.Institute}</p>
                     <p className="text-gray-600">{edu.institution}</p>
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900">Board/University</p>
+                    <p className="font-medium text-gray-900">{edu.University}</p>
                     <p className="text-gray-600">{edu.board}</p>
                   </div>
                   <div>
-                    <p className="font-medium text-gray-900">Score</p>
+                    <p className="font-medium text-gray-900">{edu.Score}</p>
                     <p className="text-gray-600">{edu.score}</p>
                   </div>
                 </div>
